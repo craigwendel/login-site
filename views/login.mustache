@@ -2,24 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Login Page</title>
   </head>
   <body>
-    <h1>Please create your profile:</h1>
+    <h1>Please login:</h1>
+      <h2>{{invalid}}</h2>
       <fieldset>
         <form class="profile" action="/login" method="post">
           <div class="username">
             <label for="username">Your Username</label>
-            <input type="text" name="username" value="" placeholder="Enter your preferred usernamed">
+            <input type="text" name="username" value="" placeholder="Username">
           </div>
           <div class="password">
             <label for="password">Your Password</label>
-            <input type="password" name="password" value="" placeholder="Enter your password">
+            <input type="password" name="password" value="" placeholder="Password">
           </div>
           <div class="submit">
             <input type="submit" name="submit" value="Submit">
           </div>
         </form>
+        </fieldset>
+        <fieldset>
+        <form class="" action="/create" method="post">
+          <button type="submit" name="create">Create an account</button>
+        </form>
       </fieldset>
+
   </body>
 </html>

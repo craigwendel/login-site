@@ -9,7 +9,10 @@
     <h2>You are logged in as {{user}}</h2>
     <h2>Your password is {{password}}</h2>
     <form class="" action="/counter" method="post">
-      <button type="submit" name="button">You have clicked the button {{views}} times!</button>
+      <button type="submit" name="button">You have clicked the button {{#views}}{{views}}{{/views}}{{^views}}0{{/views}} times!</button>
+    </form>
+    <form class="logout" action='/logout' method="post">
+      <button type="submit" name="logout">Log Out</button>
     </form>
   </body>
 </html>
